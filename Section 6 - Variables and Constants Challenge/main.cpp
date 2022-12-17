@@ -11,6 +11,7 @@ int main()
     const double smRoomCost {25};
     const double lRoomCost {35};
     const double tax {0.06};
+    const int estimate_expiry {30};
     double cost {0};
     int amtSmRooms {0}, amtLRooms{0};
 
@@ -30,7 +31,7 @@ int main()
     << "Tax: $" <<  cost * tax << "\n"
     << "========================================\n"
     << "Total estimate: $" << cost + (cost * tax) << "\n"
-    << "This estimate is valid for 30 days\n\n" << endl;
+    << "This estimate is valid for " << estimate_expiry << " days\n\n" << endl;
 
     return 0;
 }
